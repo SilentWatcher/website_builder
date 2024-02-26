@@ -1,0 +1,59 @@
+
+// COLORS
+$dark_blue : #212731;
+$light_blue: #1B88F4;
+$orange: #FF7724;
+$lightgrey : #626E79;
+$red: #EF4C5D;
+
+// TEXT COLOR 
+$text_title_color: #2C384A;
+$text_light_color: #4B5665;
+$text_lighter_color: #626E79;
+$text_lightest_color: #9FA9B3;
+
+// BORDER 
+$border_radi_8 : .4rem;
+
+// FONT FAMILY 
+
+$fontInter : "Inter", sans-serif;
+
+//FONT SIZE 
+$text_xl: 3rem;
+$small_text_size: .8rem;
+$medium_text_size: 1.5rem;
+$large_text_size: 2rem;
+
+
+//FONT WEIGHT
+
+$fw100: 100;
+$fw200: 200;
+$fw300: 300;
+$fw400: 400;
+$fw500: 500;
+$fw600: 600;
+$fw700: 700;
+$fw800: 800;
+$fw900: 900;
+
+
+%button{
+    background: $light_blue;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+    padding: .6rem;
+    color: white;
+    margin-top: 2rem;
+    border-radius: $border_radi_8;
+
+    &:hover{
+        background: #6f8dec;
+    }
+}
+
+
+
+

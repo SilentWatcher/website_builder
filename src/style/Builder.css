@@ -1,0 +1,104 @@
+.builder .builder_rating button {
+  background: #1B88F4;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  color: white;
+  margin-top: 2rem;
+  border-radius: 0.4rem;
+}
+.builder .builder_rating button:hover {
+  background: #6f8dec;
+}
+
+.builder {
+  padding: 0.4rem;
+  margin: 0rem;
+  margin-block: 4rem;
+  color: #4B5665;
+  display: flex;
+  position: relative;
+}
+.builder .best_value, .builder .best_choice {
+  position: absolute;
+  background: #FF7724;
+  display: flex;
+  align-items: center;
+  top: -2rem;
+  color: white;
+  font-size: 1rem;
+  border: 0;
+  padding: 0.4rem 1rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+.builder .image {
+  min-width: 13.75rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+.builder .image img {
+  width: 60%;
+}
+.builder .builder_info {
+  padding: 0.4rem;
+}
+.builder .builder_info p, .builder .builder_info h4, .builder .builder_info > span {
+  margin-bottom: 0.8rem;
+}
+.builder .builder_info span {
+  display: flex;
+  color: #1B88F4;
+}
+.builder .builder_info .mainHighLight {
+  margin-left: 2rem;
+}
+.builder .builder_rating {
+  color: #074786;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  text-align: center;
+  gap: 0.8rem;
+}
+.builder .builder_rating .rating {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 15rem;
+}
+@media (width < 900px) {
+  .builder {
+    flex-wrap: wrap;
+    margin-inline: 1rem;
+  }
+  .builder .image img {
+    width: 30%;
+  }
+  .builder .image {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .builder .builder_rating {
+    flex-direction: row;
+  }
+  .builder .builder_rating .rating {
+    gap: 0.2rem;
+    min-width: 15rem;
+  }
+}
+@media (width <= 768px) {
+  .builder_rating {
+    flex-direction: row;
+    margin: auto;
+  }
+  .builder_rating button {
+    max-width: 10rem;
+  }
+}/*# sourceMappingURL=builder.css.map */

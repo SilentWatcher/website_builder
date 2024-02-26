@@ -1,0 +1,63 @@
+@import './variables/variables.scss';
+
+.related_deals_card{
+
+    max-width: 20rem;
+    // border: 1px solid blue;
+    box-shadow: 0 0 15px #80808075;
+    border-radius: $border_radi_8;
+    margin-bottom: .4rem;
+
+    .img_container{
+        width: 100%;
+        padding: 1rem;
+        // background: #b4e9c6;
+       display: flex;
+       justify-content: center;
+        img{
+            width: 60%;
+            // mix-blend-mode: multiply;
+            
+        }
+    }
+    .deals_info{
+        padding: .8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        h3{
+            color: $text_light_color;
+            text-align: center;
+        }
+        .limited_offer{
+            color: $light_blue;
+        }
+
+        .pricing span{
+            margin-left: .4rem;
+
+           
+        }
+
+        p{
+            color: $text_lighter_color;
+        }
+        .discount {
+            color: $text_lighter_color;
+            font-size: $medium_text_size;
+        }
+        .original{
+            color: $text_lightest_color;
+            
+        }
+        .off{
+            color: $red;
+            font-size: $small_text_size;
+        }
+    }
+
+    button{
+        @extend %button
+    }
+}

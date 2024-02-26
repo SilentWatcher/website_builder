@@ -1,0 +1,48 @@
+
+
+@import './variables/variables.scss';
+
+
+.footer{
+    background-color: $dark_blue;
+    padding: 4rem;
+    // margin-inline: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    color: white;
+
+
+    ul li{
+        list-style-type: none;
+        margin: .8rem;
+        font-weight: $fw100;
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+    }
+
+    #country_select{
+        align-self: center;
+
+        
+        #country{
+            padding: .4rem;
+            background: transparent;
+            color: inherit;
+            border: none;
+            
+            option{
+                color: black;
+                background-color: rgb(169, 235, 247);
+                font-family: inherit;
+            }
+        }
+    }
+
+}

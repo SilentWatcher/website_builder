@@ -1,0 +1,82 @@
+
+@import './variables/variables.scss';
+
+.header{
+    padding: .4rem;
+    margin-inline: 2rem;
+	color: $text_light_color;
+		
+
+    .heading{
+        font-size:clamp(2rem ,5vw + 1rem, 2.5rem );
+
+        font-weight: $fw400;
+        color: $text_title_color;
+				margin:2rem 1rem 1rem;
+
+    }
+
+    .time_info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+        padding: .4rem;
+        border-top: .04rem  solid #E1E4E6;
+        border-bottom: .04rem  solid #E1E4E6;
+
+				.time_info_left, .time_info_right{
+					display: flex;
+					align-items: center;
+					gap: .8rem;
+				}
+
+    }
+
+		.tools_info{
+			display: flex;
+			justify-content: flex-start;
+			gap: 2rem;
+			padding: 1.25rem ;
+			font-size: 1rem;
+
+	
+			
+		}
+
+		.mininav{
+			display: flex;
+			align-items: center;
+			font-size: $small_text_size;
+
+		}
+}
+
+@media (width < 768px) {
+	
+
+	.header{
+		margin-inline: 0 ;
+		.heading{
+			font-size: clamp(0.4rem, 2vw + 1rem, 2.5rem);
+			margin: .6rem;
+		}
+
+		.tools_info{
+			gap: 1rem;
+			flex-wrap: wrap;
+			font-size: .8rem;
+		}
+
+		.time_info{
+			flex-wrap: wrap;
+			font-size: .8rem;
+			
+		}
+
+		.time_info_left, .time_info_right{
+			
+			gap: .4rem;
+		}
+	}
+	
+}

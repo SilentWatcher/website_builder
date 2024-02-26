@@ -1,0 +1,33 @@
+.footer {
+  background-color: #212731;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  color: white;
+}
+.footer ul li {
+  list-style-type: none;
+  margin: 0.8rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+.footer ul li:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.footer #country_select {
+  align-self: center;
+}
+.footer #country_select #country {
+  padding: 0.4rem;
+  background: transparent;
+  color: inherit;
+  border: none;
+}
+.footer #country_select #country option {
+  color: black;
+  background-color: rgb(169, 235, 247);
+  font-family: inherit;
+}/*# sourceMappingURL=footer.css.map */
