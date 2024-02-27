@@ -55,4 +55,9 @@
   .header .time_info_left, .header .time_info_right {
     gap: 0.4rem;
   }
+}
+@media (width < 425px) {
+  .header .mininav {
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=header.css.map */

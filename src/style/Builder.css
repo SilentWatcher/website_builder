@@ -14,23 +14,26 @@
 
 .builder {
   padding: 0.4rem;
-  margin: 0rem;
+  margin: 4rem 4rem;
   margin-block: 4rem;
   color: #4B5665;
   display: flex;
   position: relative;
+  background: #f1ecec;
+  border-radius: 0.4rem;
+  border: 0.4px solid rgba(170, 170, 170, 0.5568627451);
+  box-shadow: 0 0 5px rgba(153, 153, 153, 0.342);
 }
 .builder .best_value, .builder .best_choice {
   position: absolute;
   background: #FF7724;
   display: flex;
   align-items: center;
-  top: -2rem;
   color: white;
   font-size: 1rem;
   border: 0;
   padding: 0.4rem 1rem;
-  border-radius: 0 0.4rem 0.4rem 0;
+  border-radius: 0.4rem;
 }
 .builder .image {
   min-width: 13.75rem;
@@ -100,5 +103,24 @@
   }
   .builder_rating button {
     max-width: 10rem;
+  }
+}
+@media (width <= 425px) {
+  .builder {
+    font-size: 0.8rem;
+    margin: 2rem 1rem;
+  }
+  .builder .best_choice, .builder .best_value {
+    margin-left: -0.4rem;
+    top: 0;
+    border-radius: 0.4rem 0 2rem 0;
+    font-size: 0.8rem;
+  }
+  .builder .builder_rating {
+    gap: 0;
+    padding: 0;
+  }
+  .builder .builder_rating .rating {
+    align-items: flex-start;
   }
 }/*# sourceMappingURL=builder.css.map */

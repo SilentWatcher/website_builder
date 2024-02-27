@@ -68,4 +68,9 @@
   .navbar .menu_btn {
     display: inline-block;
   }
+}
+@media (width < 425px) {
+  .navbar .searchbar {
+    min-width: 15rem;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

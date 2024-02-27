@@ -3,13 +3,18 @@
 .builder{
     padding: .4rem;
 
-    margin: 0rem ;
+    margin: 4rem 4rem;
     margin-block: 4rem ;
 	color: $text_light_color;
 
     display: flex;
     
     position: relative;
+
+    background: #f1ecec;
+    border-radius: $border_radi_8;
+    border: .4px solid #aaaaaa8e;
+    box-shadow: 0 0 5px rgba(153, 153, 153, 0.342);
     
     
 
@@ -20,13 +25,14 @@
         background: $orange;
         display: flex;
         align-items: center;
-        top: -2rem;
+        // top: -2rem;
         color: white;
         font-size: 1rem;
         border: 0;
         padding: .4rem 1rem ;
 
-        border-radius: 0 .4rem .4rem 0;
+        
+        border-radius:  .4rem ;
     }
     .best_choice{
         @extend .best_value
@@ -155,4 +161,33 @@
 
 
 
+}
+
+@media (width <= 425px) {
+    
+    // .builder .builder_rating .rating 
+    .builder{
+
+        font-size: .8rem;
+        margin: 2rem 1rem;
+
+        .best_choice , .best_value{
+            margin-left: -0.4rem;
+            top: 0;
+            border-radius: 0.4rem   0 2rem 0;
+            font-size: .8rem;
+        }
+
+        .builder_rating{
+
+            gap: 0;
+            padding: 0;
+            .rating{
+                align-items: flex-start;
+            }
+        }
+
+
+
+    }
 }

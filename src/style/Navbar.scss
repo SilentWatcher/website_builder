@@ -104,3 +104,12 @@
 
 
 }
+
+@media (width < 425px) {
+	.navbar{
+        .searchbar{
+            min-width: 15rem;
+            
+        }
+    }
+}
